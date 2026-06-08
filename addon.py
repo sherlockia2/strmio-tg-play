@@ -218,20 +218,20 @@ async def landing(request: Request):
                     display: inline-flex;
                     align-items: center;
                     gap: 6px;
-                    background: #27272a;
-                    border: 1px solid #3f3f46;
-                    color: #e4e4e7;
-                    padding: 6px 12px;
+                    background: linear-gradient(135deg, #fbbf24 0%, #d97706 100%);
+                    color: #09090b;
+                    padding: 8px 14px;
                     border-radius: 6px;
-                    font-size: 0.75rem;
-                    font-weight: 500;
+                    font-size: 0.78rem;
+                    font-weight: 700;
                     text-decoration: none;
-                    transition: all 0.2s;
+                    box-shadow: 0 0 15px rgba(251, 191, 36, 0.3);
+                    transition: all 0.3s ease;
                 }}
                 .star-badge:hover {{
-                    background: #3f3f46;
-                    border-color: #52525b;
-                    color: #ffffff;
+                    transform: translateY(-2px);
+                    box-shadow: 0 0 20px rgba(251, 191, 36, 0.6);
+                    color: #000000;
                 }}
                 .hero {{
                     text-align: center;
@@ -483,8 +483,8 @@ async def landing(request: Request):
                     </div>
                     <div class="header-actions">
                         <a href="https://github.com/SunilRoy-dev/stremio-telegram-debrid" target="_blank" class="star-badge">
-                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 4px;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
-                            GitHub Repository
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" stroke="none" style="margin-right: 4px;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                            Star on GitHub
                         </a>
                     </div>
                 </div>

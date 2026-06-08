@@ -273,11 +273,14 @@ Hugging Face Spaces is the recommended hosting platform as it provides fast netw
    - Scroll down to **Space Visibility** and make sure it is set to **Public** (required for the free tier).
    - Click **Create Space** at the bottom.
 
-4. **Connect GitHub and Deploy**:
-   - Once your Space is created, click the **Settings** tab at the top-right of your Space page.
-   - Scroll down to the **GitHub integration** section.
-   - Authorize Hugging Face to access your GitHub, then select your fork of 'stremio-telegram-debrid' from the dropdown list.
-   - Click **Save** / **Connect**. Hugging Face will automatically pull the code from your GitHub fork and deploy it!
+4. **Upload Your Code to the Space**:
+   - Go to your new Space page and click the **Files** tab at the top.
+   - Click **+ Add file** > **Upload files**.
+   - On your GitHub fork, click the green **Code** button and select **Download ZIP**. Extract the ZIP on your device.
+   - Upload all the extracted files into the upload area on Hugging Face. Make sure 'Dockerfile', 'addon.py', 'requirements.txt', and all other project files are uploaded to the root of the Space (not inside a subfolder).
+   - Click **Commit changes to main**. Hugging Face will automatically start building and deploying your Space!
+
+   > ** Mobile Users**: This works on your phone too! Download the ZIP from GitHub in your mobile browser, then open your phone's file manager (Files app on iPhone, or any file manager on Android) to extract it. Go back to the Hugging Face upload page in your browser and tap **Upload files** — select the extracted files from your phone storage and upload them.
 
 5. **Configure Environment Secrets**: 
    - Stay in the **Settings** tab, scroll down to **Variables and secrets**, and click **New secret** to add your settings:
